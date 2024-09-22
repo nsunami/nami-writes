@@ -3,8 +3,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
 	<title>Nami Writes - Nami&#39;s Blog</title>
 	<subtitle>Nami writes about things</subtitle>
-	<link href="https://blog.namisunami.com/nami-writes/feed/feed.xml" rel="self" />
-	<link href="https://blog.namisunami.com/nami-writes/" />
+	<link href="https://blog.namisunami.com/feed/feed.xml" rel="self" />
+	<link href="https://blog.namisunami.com/" />
 	<updated>2024-09-22T00:00:00Z</updated>
 	<id>https://blog.namisunami.com/</id>
 	<author>
@@ -13,12 +13,12 @@
 	</author> 
 	<entry>
 		<title>Starting my blog</title>
-		<link href="https://blog.namisunami.com/nami-writes/gr3pVkeS" />
+		<link href="https://blog.namisunami.com/gr3pVkeS" />
 		<updated>2024-09-22T00:00:00Z</updated>
-		<id>https://blog.namisunami.com/nami-writes/gr3pVkeS</id>
+		<id>https://blog.namisunami.com/gr3pVkeS</id>
 		<content
 			type="html"
-			>&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://blog.namisunami.com/nami-writes/img/tuL_S4P0Ue-600.avif 600w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://blog.namisunami.com/nami-writes/img/tuL_S4P0Ue-600.webp 600w&quot;&gt;&lt;img alt=&quot;Photo of the keyboard of black MacBook&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://blog.namisunami.com/nami-writes/img/tuL_S4P0Ue-600.jpeg&quot; width=&quot;600&quot; height=&quot;400&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+			>&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://blog.namisunami.com/img/tuL_S4P0Ue-600.avif 600w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://blog.namisunami.com/img/tuL_S4P0Ue-600.webp 600w&quot;&gt;&lt;img alt=&quot;Photo of the keyboard of black MacBook&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://blog.namisunami.com/img/tuL_S4P0Ue-600.jpeg&quot; width=&quot;600&quot; height=&quot;400&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;p&gt;I&#39;m trying to (re)start my blog &lt;a href=&quot;https://www.11ty.dev/&quot;&gt;11ty&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The first time I wrote a blog was probably in my early teen, and it was in Japanese.&lt;/p&gt;
 &lt;p&gt;A lot has changed since then—not only my age, but also the online world.&lt;/p&gt;
@@ -31,15 +31,15 @@
 	</entry> 
 	<entry>
 		<title>Coding Couple</title>
-		<link href="https://blog.namisunami.com/nami-writes/dkDcR1T9" />
+		<link href="https://blog.namisunami.com/dkDcR1T9" />
 		<updated>2024-05-03T00:00:00Z</updated>
-		<id>https://blog.namisunami.com/nami-writes/dkDcR1T9</id>
+		<id>https://blog.namisunami.com/dkDcR1T9</id>
 		<content
 			type="html"
 			>&lt;p&gt;I posted on &lt;a href=&quot;https://www.linkedin.com/posts/nsunami_github-jazellemairamidi-piano-midi-activity-7192512511823208448-f6rO?utm_source=share&amp;amp;utm_medium=member_desktop&quot;&gt;LinkedIn&lt;/a&gt; about Jazelle and my coding time on Saturdays. For Jazelle&#39;s post:&lt;/p&gt;
 &lt;iframe src=&quot;https://www.linkedin.com/embed/feed/update/urn:li:share:7191913594995777536&quot; height=&quot;753&quot; width=&quot;504&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; title=&quot;Embedded post&quot;&gt;
 &lt;/iframe&gt;
-&lt;p&gt;&lt;a href=&quot;https://blog.namisunami.com/nami-writes/%22https:/www.linkedin.com/in/jazellemaira-design/%22&quot;&gt;Jazelle&lt;/a&gt; and I are both learning to code. Her part more focused on frontend, and mine on full-stack framework (currently Redwood.js).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.namisunami.com/%22https:/www.linkedin.com/in/jazellemaira-design/%22&quot;&gt;Jazelle&lt;/a&gt; and I are both learning to code. Her part more focused on frontend, and mine on full-stack framework (currently Redwood.js).&lt;/p&gt;
 &lt;p&gt;But, finding time for coding is not easy. During the day, I have work. And after some days, I ran out of energy or time to work on my learning.&lt;/p&gt;
 &lt;p&gt;So, we started a new routine: co-coding time on Saturdays. After grocery shopping in the morning, we go to the library, get coffee, and find a spot to sit together and work on our respective learning projects.&lt;/p&gt;
 &lt;p&gt;Spending time together for things that we like is nice. Of course, we can learn things independently in our own time. But, I think there&#39;s a power to sharing the same moment together, even though we are not interacting with each other.&lt;/p&gt;
