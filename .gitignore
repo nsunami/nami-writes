@@ -1,3 +1,6 @@
+# Eleventy - ignore the built site
+_site/
+
 # Logs
 logs
 *.log
