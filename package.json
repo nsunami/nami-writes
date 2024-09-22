@@ -4,7 +4,7 @@
 	"description": "Nami's blog",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
-		"build-ghpages": "npx @11ty/eleventy --pathprefix=/nami-writes/",
+		"build-ghpages": "npx @11ty/eleventy",
 		"start": "npx @11ty/eleventy --serve --quiet",
 		"debug": "DEBUG=Eleventy* npx @11ty/eleventy",
 		"debugstart": "DEBUG=Eleventy* npx @11ty/eleventy --serve --quiet",
