@@ -1,7 +1,7 @@
 ---
 title: Coding Couple
 description: Coding in a local library
-permalink: dkDcR1T9
+permalink: /dkDcR1T9/
 date: 2024-05-03
 tags: [coding, library, couples]
 ---
