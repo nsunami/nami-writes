@@ -270,3 +270,12 @@ a[href].header-anchor:focus,
 h2 + .header-anchor {
 	font-size: 1.5em;
 }
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+iframe {
+	max-width: 100%;
+}
