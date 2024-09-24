@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Nami's blog",
 	"scripts": {
+		"post-today": "sh ./scripts/createNewPost.sh",
 		"build": "npx @11ty/eleventy",
 		"build-ghpages": "npx @11ty/eleventy",
 		"start": "npx @11ty/eleventy --serve --quiet",
