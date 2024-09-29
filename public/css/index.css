@@ -279,3 +279,24 @@ img {
 iframe {
 	max-width: 100%;
 }
+
+/* Styling the tag list  */
+
+.tagList {
+	list-style: none;
+}
+
+.tagList > li {
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+.tagList > li::after {
+	content: ",";
+	position: relative;
+	left: -0.5ch;
+}
+.tagList > li:last-child:after {
+	content: "";
+}

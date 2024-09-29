@@ -35,7 +35,7 @@ morePosts = postsCount - numberOfLatestPostsToShow %} {% if morePosts > 0 %}
 #}
 
 <h2>Tags</h2>
-<ul>
+<ul class="tagList">
 	{% for tag in collections.all | getAllTags | filterTagList %} {% set tagUrl
 	%}/tags/{{
 		tag | slugify
