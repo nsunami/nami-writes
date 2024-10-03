@@ -13,3 +13,5 @@ jobs:
         with:
           message: |
             Hello world ! :wave:
+permissions:
+  pull-requests: write
