@@ -1,3 +1,5 @@
+.DS_store
+
 # Eleventy - ignore the built site
 _site/
 
