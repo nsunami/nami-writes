@@ -124,6 +124,7 @@ table th {
 pre,
 code {
 	font-family: var(--font-family-monospace);
+	background-color: hsl(238, 52%, 43%);
 }
 pre:not([class*="language-"]) {
 	margin: 0.5em 0;
