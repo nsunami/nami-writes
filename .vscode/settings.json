@@ -1,0 +1,10 @@
+{
+	"cSpell.words": ["OSCNL", "SIPS"],
+	"languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+		"diederik",
+		"oscnl",
+		"researchequals",
+		"stapel",
+		"taverne"
+	]
+}
