@@ -12,7 +12,6 @@ import pluginImages from "./eleventy.config.images.js";
 
 /** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
 export default function (eleventyConfig) {
-	eleventyConfig.addPlugin(UpgradeHelper);
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
