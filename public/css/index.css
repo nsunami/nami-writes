@@ -78,6 +78,7 @@ p {
 
 li {
 	line-height: 1.5;
+	margin-top: 0.75rem;
 }
 
 a[href] {
