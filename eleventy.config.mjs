@@ -8,7 +8,7 @@ import pluginNavigation from "@11ty/eleventy-navigation";
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 import pluginDrafts from "./eleventy.config.drafts.js";
-import pluginImages from "./eleventy.config.images.js";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 /** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
 export default function (eleventyConfig) {
@@ -27,7 +27,6 @@ export default function (eleventyConfig) {
 
 	// App plugins
 	eleventyConfig.addPlugin(pluginDrafts);
-	eleventyConfig.addPlugin(pluginImages);
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
@@ -37,6 +36,9 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		widths: [600],
+	});
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {

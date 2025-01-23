@@ -78,6 +78,7 @@ p {
 
 li {
 	line-height: 1.5;
+	margin-top: 0.75rem;
 }
 
 a[href] {
@@ -142,7 +143,7 @@ pre:not([class*="language-"]) {
 	word-break: normal;
 }
 code {
-	word-break: break-all;
+	word-break: normal;
 }
 
 /* Header */
@@ -270,6 +271,13 @@ a[href].header-anchor:focus,
 
 h2 + .header-anchor {
 	font-size: 1.5em;
+}
+
+h1,
+h2,
+h3 {
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
 }
 
 img {
