@@ -8,6 +8,10 @@
     name="description" content="{{ description or metadata.description }}"> {#- Atom and JSON feeds included by default #}
     <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}"> {#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
     {#- <meta name="generator" content="{{ eleventy.generator }}"> #}
     {#-
         		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
