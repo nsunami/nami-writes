@@ -12,6 +12,13 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 		<link rel="manifest" href="/favicon/site.webmanifest">
+
+		{# Open Graph Metadata #}
+		<meta property="og:title" content="{{ title or metadata.title }}" />
+		<meta property="og:description" content="{{ description or metadata.description }}" />
+		<meta property="og:image" content="/img/og-image-default.jpeg" />
+		<meta property="og:image:secure_url" content="/img/og-image-default.jpeg" />
+
     {#- <meta name="generator" content="{{ eleventy.generator }}"> #}
     {#-
         		CSS bundles are provided via the `eleventy-plugin-bundle` plugin:
