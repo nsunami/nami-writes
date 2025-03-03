@@ -125,7 +125,9 @@ table th {
 pre,
 code {
 	font-family: var(--font-family-monospace);
-	background-color: hsl(238, 52%, 43%);
+	/* Match bg and fg with prism-holi-theme */
+	background-color: #030314;
+	color: #d6e7ff;
 }
 pre:not([class*="language-"]) {
 	margin: 0.5em 0;
