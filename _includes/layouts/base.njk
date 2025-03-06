@@ -59,7 +59,11 @@
     <main id="skip">
       {{ content | safe }}
     </main>
-    <footer></footer>
+    <footer>
+			<p>
+      	© {% currentYear %} Nami Sunami
+		  </p>
+		</footer>
     <!-- This page `{{ page.url | htmlBaseUrl }}` was built on {% currentBuildDate %} -->
   </body>
 </html>
