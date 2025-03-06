@@ -59,11 +59,13 @@
     <main id="skip">
       {{ content | safe }}
     </main>
-    <footer>
-			<p>
+    <footer class="footer">
+			<div class="footer-copyright">
       	© {% currentYear %} Nami Sunami
-		  </p>
+		  </div>
+			<div>
 			<a href="{{ metadata.gitHubUrl }}/blob/main/{{ page.inputPath }}" target="_blank" rel="noopener noreferrer">Edit this page on GitHub</a>
+			</div>
 		</footer>
     <!-- This page `{{ page.url | htmlBaseUrl }}` was built on {% currentBuildDate %} -->
   </body>
