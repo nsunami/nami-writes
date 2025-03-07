@@ -8,4 +8,5 @@ module.exports = {
 		email: "nsunami@pm.me",
 		url: "https://blog.namisunami.com/about-me/",
 	},
+	gitHubUrl: "https://github.com/nsunami/nami-writes",
 };

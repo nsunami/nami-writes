@@ -311,3 +311,12 @@ iframe {
 .tagList > li:last-child:after {
 	content: "";
 }
+
+.footer {
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+.footer-copyright {
+	margin-bottom: 0.5rem;
+}
