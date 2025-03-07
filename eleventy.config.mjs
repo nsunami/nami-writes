@@ -9,6 +9,7 @@ import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 import pluginDrafts from "./eleventy.config.drafts.js";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import pluginWebc from "@11ty/eleventy-plugin-webc";
 
 /** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
 export default function (eleventyConfig) {
@@ -107,6 +108,9 @@ export default function (eleventyConfig) {
 	eleventyConfig.addShortcode("currentYear", () => {
 		return new Date().getFullYear();
 	});
+
+	// WebC Plugin
+	eleventyConfig.addPlugin(pluginWebc);
 
 	// Features to make your build faster (when you need them)
 
