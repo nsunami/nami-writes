@@ -1,7 +1,9 @@
 {
-	"cSpell.words": ["OSCNL", "SIPS"],
+	"cSpell.words": ["Beatenberg", "González", "Gorka", "OSCNL", "SIPS"],
 	"languageToolLinter.languageTool.ignoredWordsInWorkspace": [
+		"beatenberg",
 		"diederik",
+		"gorka",
 		"oscnl",
 		"researchequals",
 		"stapel",
