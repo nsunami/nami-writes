@@ -37,7 +37,7 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
 	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		widths: [600],
+		widths: ["1920"],
 	});
 
 	// Filters
