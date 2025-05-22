@@ -285,6 +285,7 @@ h3 {
 img {
 	max-width: 100%;
 	object-fit: contain;
+	height: fit-content;
 }
 
 iframe {
