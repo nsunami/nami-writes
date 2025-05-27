@@ -19,3 +19,8 @@ npx @11ty/eleventy --serve
 ```
 
 To create permalinks for the posts, I use [Token Generator](https://it-tools.tech/token-generator?length=8) from IT Tools to generate a token with 8 characters.
+
+## Contributors
+
+- @nsunami (authoring, coding)
+- @jazellemaira (copy editing, proofreading, coding)
