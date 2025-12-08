@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	title: "Nami Writes - Nami's Blog",
 	url: "https://blog.namisunami.com/",
 	language: "en",
