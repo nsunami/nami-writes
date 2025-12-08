@@ -1,7 +1,7 @@
 import { DateTime } from "luxon";
 import markdownItAnchor from "markdown-it-anchor";
 
-import pluginRss from "@11ty/eleventy-plugin-rss";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginBundle from "@11ty/eleventy-plugin-bundle";
 import pluginNavigation from "@11ty/eleventy-navigation";
@@ -29,7 +29,6 @@ export default function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginDrafts);
 
 	// Official plugins
-	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginSyntaxHighlight, {
 		preAttributes: { tabindex: 0 },
 	});
@@ -115,6 +114,40 @@ export default function (eleventyConfig) {
 	// https://www.11ty.dev/docs/copy/#emulate-passthrough-copy-during-serve
 
 	// eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+
+	// Feed plugin
+	eleventyConfig.addPlugin(feedPlugin, {
+		type: "atom", // or "rss", "json"
+		outputPath: "/feed/feed.xml",
+		stylesheet: "pretty-atom-feed.xsl",
+		templateData: {
+			eleventyNavigation: {
+				key: "Feed",
+				order: 4,
+			},
+		},
+		collection: {
+			name: "posts",
+			limit: 10,
+		},
+		metadata: {
+			language: "en",
+			title: "Nami Writes",
+			subtitle: "Nami's blog",
+			base: "https://blog.namisunami.com/",
+			author: {
+				name: "Nami Sunami",
+			},
+		},
+	});
+
+	// Copy the contents of the `public` folder to the output folder
+	// For example, `./public/css/` ends up in `_site/css/`
+	eleventyConfig
+		.addPassthroughCopy({
+			"./public/": "/",
+		})
+		.addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
 
 	return {
 		// Control which files Eleventy will process
