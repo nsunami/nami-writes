@@ -36,11 +36,11 @@ npm run new-post "Post Title" my-slug
 
 This creates `content/blog/YYYY-MM-DD/YYYY-MM-DD-my-slug.md`.
 
-To specify the date instead of today:
+To specify the date instead of today, pass it as the last argument:
 
 ```bash
-npm run new-post "Post Title" --date 2026-08-01
-npm run new-post "Post Title" my-slug --date 2026-08-01
+npm run new-post "Post Title" 2023-01-06
+npm run new-post "Post Title" my-slug 2023-01-06
 ```
 
 ## Contributors
