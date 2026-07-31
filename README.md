@@ -18,7 +18,30 @@ npm install
 npx @11ty/eleventy --serve
 ```
 
-To create permalinks for the posts, I use [Token Generator](https://it-tools.tech/token-generator?length=8) from IT Tools to generate a token with 8 characters.
+## How to create a new post
+
+Create a post for today:
+
+```bash
+npm run new-post "Post Title"
+```
+
+This creates `content/blog/YYYY-MM-DD/YYYY-MM-DD.md` with a randomly generated permalink, and opens the file in your `$EDITOR`.
+
+To add a slug to the filename:
+
+```bash
+npm run new-post "Post Title" my-slug
+```
+
+This creates `content/blog/YYYY-MM-DD/YYYY-MM-DD-my-slug.md`.
+
+To specify the date instead of today:
+
+```bash
+npm run new-post "Post Title" --date 2026-08-01
+npm run new-post "Post Title" my-slug --date 2026-08-01
+```
 
 ## Contributors
 
