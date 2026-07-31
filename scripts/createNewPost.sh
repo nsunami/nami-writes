@@ -7,37 +7,35 @@ SLUG=""
 DATE=""
 
 usage() {
-	echo "Usage: npm run new-post \"Title\" [slug] [-d|--date YYYY-MM-DD]"
+	echo "Usage: npm run new-post \"Title\" [slug] [YYYY-MM-DD]"
 	exit 1
 }
 
-if [ $# -lt 1 ]; then
-	usage
-fi
-
-while [ $# -gt 0 ]; do
+is_date() {
 	case "$1" in
-		-d|--date)
-			if [ $# -lt 2 ]; then
-				usage
-			fi
-			DATE=$2
-			shift 2
-			;;
-		-*)
-			usage
-			;;
-		*)
-			if [ -z "$TITLE" ]; then
-				TITLE=$1
-			elif [ -z "$SLUG" ]; then
-				SLUG=$1
-			else
-				usage
-			fi
-			shift
-			;;
+		[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]) return 0 ;;
+		*) return 1 ;;
 	esac
+}
+
+for arg in "$@"; do
+	if [ -z "$TITLE" ]; then
+		TITLE=$arg
+	elif [ -z "$SLUG" ]; then
+		if is_date "$arg"; then
+			DATE=$arg
+		else
+			SLUG=$arg
+		fi
+	elif [ -z "$DATE" ]; then
+		if is_date "$arg"; then
+			DATE=$arg
+		else
+			usage
+		fi
+	else
+		usage
+	fi
 done
 
 if [ -z "$TITLE" ]; then
@@ -47,11 +45,6 @@ fi
 if [ -z "$DATE" ]; then
 	DATE=$(date '+%Y-%m-%d')
 fi
-
-case "$DATE" in
-	[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]) ;;
-	*) echo "Invalid date: $DATE (expected YYYY-MM-DD)" >&2 && usage ;;
-esac
 
 # Generate a random 8-character hex string (works on macOS & Linux)
 PERMALINK=$(openssl rand -hex 4)
