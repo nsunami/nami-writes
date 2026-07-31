@@ -4,7 +4,7 @@
 	"description": "Nami's blog",
 	"type": "module",
 	"scripts": {
-		"post-today": "sh ./scripts/createNewPost.sh",
+		"new-post": "sh ./scripts/createNewPost.sh",
 		"build": "npx @11ty/eleventy",
 		"build-ghpages": "npx @11ty/eleventy",
 		"start": "npx @11ty/eleventy --serve --quiet",
